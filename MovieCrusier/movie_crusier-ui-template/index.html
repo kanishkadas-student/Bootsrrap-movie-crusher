@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/home/mitali/Music/Bootstrap/MovieCrusier/css/style.css">
+  <title>movie crusier final check</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expend-lg navbar-dark ml-auto">
+        <a class="navbar-brand text-white ml-2" href="#"><i class="material-icons mr-2">movie</i><b>Movie Crusier</b></a>
+       
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+       <!-- Navbar links -->
+       <div class="collapse navbar-collapse" id="collapsibleNavbar">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#movie">All Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fav-section">Favourites</a>
+            </li>
+         </ul>
+       </div>
+     </nav>
+    </header>
+<!--div class ="container">
+   <h1><center>Hello World</center></h1>
+</div-->
+<section id="home">
+  <div class="dark-overlay">
+    <div class="home-inner container">
+      <label for="search" class="display-4 text-white">Find Movie</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="material-icons input-group-text cafecup" href="#">
+            theaters
+          </button>
+        </div>
+        <input class="form-control" type="text" placeholder="Search Movie" id="searchBar" onkeyup="searchFun();">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="movie" style="border-top: 3px dashed white">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-2">
+        <div class="card mt-3">
+          <a href="#" data-toggle="modal" data-target="#loginModal">
+            <img class="card-img-top hoverable" src="/home/mitali/Music/Bootstrap/MovieCrusier/img/ironman.jpeg">
+          </a>
+          <div class="modal" id="loginModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">IRON MAN</h5>
+                  <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300px" src="https://www.youtube.com/watch?v=8ugaeA-nMTc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h6>
+                  IRON MAN
+                </h6>
+              </div>
+              <div class="col text-right">
+                $99
+              </div>
+            </div>
+
+            <small class="text-muted d-flex justify-content-between align-items-center">
+              <span class="badge badge-success p-1 mr-1">
+                Active</span>
+              Super Hero
+            </small>
+            <div class="row justify-content-between mt-3">
+              <div class="col">
+                <span class="material-icons text-muted" style="font-size: 15px">
+                  schedule
+                </span>
+                <small class="text-muted">Launch</small><br>
+                <small class="text-muted">17/04/2019</small>
+              </div>
+              <i class="material-icons col-2 mr-3 align-self-center" id="fav" data-toggle="tooltip" data-placement="left" data-html="true" title="<h3>Add</h3><p>to Favourite</p>">
+                favorite_border
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-2">
+        <div class="card mt-3">
+          <a href="#" data-toggle="modal" data-target="#loginModal2">
+            <img class="card-img-top hoverable" src="/home/mitali/Music/Bootstrap/MovieCrusier/img/jo.jpg">
+          </a>
+          <div class="modal" id="loginModal2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Teaser of Joker</h5>
+                  <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/t433PEQGErc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h6>
+                  Joker
+                </h6>
+              </div>
+              <div class="col text-right">
+                $99
+              </div>
+            </div>
+
+            <small class="text-muted d-flex justify-content-between align-items-center">
+              <span class="badge badge-success p-1 mr-1">
+                Active</span>
+              Super Villan
+            </small>
+            <div class="row justify-content-between mt-3">
+              <div class="col">
+                <span class="material-icons text-muted" style="font-size: 15px">
+                  schedule
+                </span>
+                <small class="text-muted">Launch</small><br>
+                <small class="text-muted">17/04/2020</small>
+              </div>
+              <i class="material-icons col-2 mr-3 align-self-center" id="fav" data-toggle="tooltip" data-placement="left" data-html="true" title="<h3>Add</h3><p>to Favourite</p>">
+                favorite_border
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-2">
+        <div class="card mt-3">
+          <a href="#" data-toggle="modal" data-target="#loginModal3">
+            <img class="card-img-top hoverable" src="/home/mitali/Music/Bootstrap/MovieCrusier/img/godzilla.jpeg">
+          </a>
+          <div class="modal" id="loginModal3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Teaser of Godzilla</h5>
+                  <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/watch?v=QFxN2oDKk0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h6>
+                  Godzilla, The King 
+                  Of Monster
+                </h6>
+              </div>
+              <div class="col text-right">
+                $129
+              </div>
+            </div>
+
+            <small class="text-muted d-flex justify-content-between align-items-center">
+              <span class="badge badge-success p-1 mr-1">
+                Active</span>
+              Science Fiction
+            </small>
+            <div class="row justify-content-between mt-3">
+              <div class="col">
+                <span class="material-icons text-muted" style="font-size: 15px">
+                  schedule
+                </span>
+                <small class="text-muted">Launch</small><br>
+                <small class="text-muted">17/05/2019</small>
+              </div>
+              <i class="material-icons col-2 mr-3 align-self-center" id="fav" data-toggle="tooltip" data-placement="left" data-html="true" title="<h3>Add</h3><p>to Favourite</p>">
+                favorite_border
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-2">
+        <div class="card mt-3">
+          <a href="#" data-toggle="modal" data-target="#loginModal4">
+            <img class="card-img-top hoverable" src="/home/mitali/Music/Bootstrap/MovieCrusier/img/ditiyo.jpeg">
+          </a>
+          <div class="modal" id="loginModal4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Teaser of দ্বিতীয় পুরুষ</h5>
+                  <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/watch?v=y1P3qysOMQI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h6>
+                  দ্বিতীয় পুরুষ
+                </h6>
+              </div>
+              <div class="col text-right">
+                $99
+              </div>
+            </div>
+
+            <small class="text-muted d-flex justify-content-between align-items-center">
+              <span class="badge badge-success p-1 mr-1">
+                Active</span>
+              Art Flim
+            </small>
+            <div class="row justify-content-between mt-3">
+              <div class="col">
+                <span class="material-icons text-muted" style="font-size: 15px">
+                  schedule
+                </span>
+                <small class="text-muted">Launch</small><br>
+                <small class="text-muted">23/01/2020</small>
+              </div>
+              <i class="material-icons col-2 mr-3 align-self-center" id="fav" data-toggle="tooltip" data-placement="left" data-html="true" title="<h3>Add</h3><p>to Favourite</p>">
+                favorite_border
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-2">
+        <div class="card mt-3">
+          <a href="#" data-toggle="modal" data-target="#loginModal5">
+            <img class="card-img-top hoverable" src="/home/mitali/Music/Bootstrap/MovieCrusier/img/notebook.jpeg">
+          </a>
+          <div class="modal" id="loginModal5">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Teaser of Notebook</h5>
+                  <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/watch?v=SXYxOCLc9-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h6>
+                  Notebook
+                </h6>
+              </div>
+              <div class="col text-right">
+                $79
+              </div>
+            </div>
+
+            <small class="text-muted d-flex justify-content-between align-items-center">
+              <span class="badge badge-success p-1 mr-1">
+                Active</span>
+              Romance / Drama
+            </small>
+            <div class="row justify-content-between mt-3">
+              <div class="col">
+                <span class="material-icons text-muted" style="font-size: 15px">
+                  schedule
+                </span>
+                <small class="text-muted">Launch</small><br>
+                <small class="text-muted">29/03/2019</small>
+              </div>
+              <i class="material-icons col-2 mr-3 align-self-center" id="fav" data-toggle="tooltip" data-placement="left" data-html="true" title="<h3>Add</h3><p>to Favourite</p>">
+                favorite_border
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fav-section" class="bg-dark text-white mt-3" style="background: linear-gradient(black, black, brown); border-top: 3px dashed white">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center py-3">
+        <h2 class="display-4">Favourite Movies</h2>
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 style="font-weight: inherit">
+                Dwitiyo Purush</h5>
+              <h6 style="color: #6d1a41">200 Favourite Counts</h6>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <span class="badge badge-success p-1 mr-1 align-self-center">
+                4.4</span>
+              <a class="ml-auto" data-toggle="tooltip" data-placement="left" data-html="true" href="fav-delete-index.html"><span class="material-icons bin">
+                  delete_forever
+                </span></a>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 style="font-weight: inherit">Godzilla</h5>
+              <h6 style="color: #6d1a41">405 Favourite Counts</h6>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <span class="badge badge-warning p-1 mr-1 align-self-center">
+                3.8</span>
+              <a class="ml-auto" data-toggle="tooltip" data-placement="left" data-html="true" href="fav-delete-index.html"><span class="material-icons bin">
+                  delete_forever
+                </span></a>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 style="font-weight: inherit">Notebook</h5>
+              <h6 style="color: #6d1a41">556 Favourite Counts</h6>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <span class="badge badge-danger p-1 mr-1 align-self-center">
+                2.9</span>
+              <a class="ml-auto" data-toggle="tooltip" data-placement="left" data-html="true" href="fav-delete-index.html"><span class="material-icons bin">
+                  delete_forever
+                </span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="margin-top: 54px"></div>
+<footer class="footer">
+    <p>Copyright 2019</p>
+</footer>
+</body>
+</html> 

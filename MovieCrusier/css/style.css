@@ -1,0 +1,31 @@
+.header{
+    background-color: crimson;
+    color: aliceblue;
+
+}
+.footer{
+    background-color: darkslategrey;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+body{
+        background: radial-gradient(rgb(1, 1, 46), blue, black);
+    }
+
+#home{
+	background: url(https://images.unsplash.com/photo-1507924538820-ede94a04019d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 500px;
+}
+#home .home-inner{
+	padding-top: 260px;
+}
+
+.material-icons {
+	vertical-align: middle;
+	font-size: 30px;
+}
